@@ -1,0 +1,103 @@
+.App {
+  width: auto;
+  text-align: center;
+}
+
+/*-------------------------------- Elements ---------------------------------*/
+li {
+  padding: 0.5em;
+  text-align: center;
+}
+
+ul {
+  padding: 0em;
+  margin: 0em;
+}
+
+button {
+  font-size: 2rem;
+  margin-top:1em;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/*--------------------------------- Classes -----------------------------------*/
+.navBar {
+  width:100%;
+  background-color: gray;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  list-style-type: none;
+  font-size: 1em;
+}
+
+.show-nav {
+  height: 100%;
+}
+
+/*-------------------------------------------- Media screen size -----------------------------*/
+
+@media screen and (min-width: 768px) {
+
+    button {
+      display: none;
+    }
+    .links {
+      height: auto;
+      display: flex;
+      justify-content: space-around;
+      font-size: 0.8em;
+    }
+    .navBar {
+      width:100%;
+      background-color:gray;
+      color: white;
+      padding: 0.5em;
+    }
+    li {
+      padding: 0 1em;
+    }
+}
+
+/*---------------------------- links styling -----------------------*/
+/* a:link, a:visited {
+  text-decoration: none;
+  color: rgb(255, 255, 255)
+}
+a:hover, a:active {
+  text-decoration: none;
+  color: rgb(6, 94, 43);
+} */
+
+
+a:link {
+text-decoration: none;
+color: rgb(255, 255, 255)
+}
+a:visited {
+text-decoration: none;
+color: rgb(255, 255, 255)
+}
+a:focus {
+text-decoration: none;
+color: rgb(6, 94, 43);
+}
+a:hover {
+text-decoration: none;
+color: rgb(6, 94, 43);
+}
+a:active {
+text-decoration: none;
+color: rgb(6, 94, 43);
+}
